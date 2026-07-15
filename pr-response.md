@@ -33,9 +33,9 @@
 
 ## Comment 6 — Rebase
 
-**What conflicted:**
-**How I resolved it:**
-**How I verified no conflict remains:**
+**What conflicted:** Running: pytest tests/test_watchlist.py -v causes an ImportError while importing test module form the test_watchlist.py. There is an issue importing WatchListEntry from Models.
+**How I resolved it:** I resolved this issue by going to Models.py, copying and pasting class CollectionEntry(db.Model), and rewriting it to be class WatchlistEntry(db.model), making sure the table arguments called from unique_user_film_watchlist as well.
+**How I verified no conflict remains:** How I verified that there was no issues was by first fully going through the new function to make sure that there was nothing carried over from the collections function. Next, I reran pytest tests/test_watchlist.py -v, which passed now. I also ran pytest tests/ -v to make sure everything as whole passed as well.
 
 ## PR Description
 

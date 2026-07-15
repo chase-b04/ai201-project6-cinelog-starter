@@ -1,0 +1,6 @@
+[33mf0408c1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/watchlist[m[33m)[m Response to Comment 4 and 5 - Added positions, reasonings, and tradeoff/engagement comments to pr-response.md. Also added the sort order change.
+[33mf72486c[m Response to Comment 3 -- added tests/test_watchlist.py with logic that checks a case where film_id doesn't exist yet in the watchlist, in which the program passed in 0.44s. Based on the test_collection.py test.
+[33mccd639e[m Response to Comment 2 -- added deduplication logic to add_to_watchlist() in services/watchlist_service.py with a similar handling pattern as add_to_collection in services/collection_service.py()
+[33me3df054[m Response to Comment 1 -- Renamed save_to_watchlist() in services/watchlist_service.py to add_to_watchlist(), as well as changing 2 mentions of this function in routes/watchlist/watchlist.py
+[33m81b1a33[m fix: update film retrieval method to use db.session.get in collection and watchlist services
+[33m5bc6698[m added watchlist model and endpoint fixed a bug more changes
