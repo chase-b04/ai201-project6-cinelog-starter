@@ -12,7 +12,7 @@
 ## Comment 2 — Deduplication
 
 **What I did:** I edited add_to_watchlist() in services/watchlist_service.py by adding an "existing" boolean value that was a WatchlistEntry query that is filtered by userid and filmid. I then used an if statement to check if "existing" is true, and if it was it would call a AlreadyInWatchlistError, in which I supplementarily created as a class on top of add_to_watchlist().
-**How I verified:** How I verified is I went to services/collection_service.py and checked out it's add_to_collection() and say the differences inbetween it and add_to_watchlist()'s program, and noticed a block of code that mentioned above, everything else looked identical logically. I reran through the logic of both functions and now both line up.
+**How I verified:** How I verified is I went to services/collection_service.py and checked out it's add_to_collection() and say the differences inbetween it and add_to_watchlist()'s program, and noticed a block of code that mentioned above, everything else looked identical logically. I reran through the deduplication logic of both functions and now both line up.
 
 ## Comment 3 — Missing test
 
