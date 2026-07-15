@@ -39,4 +39,6 @@
 
 ## PR Description
 
+![alt text](image.png)
+
 <!-- Written at the end — feature overview, design decisions, manual testing steps -->
